@@ -1,5 +1,6 @@
-celsius = 100
+print "Enter the temperature in Celsius: "
+celsius = gets.chomp.to_i
 fahrenheit = (celsius * 9) / 5 + 32
-puts "Thre result is: "
-puts fahrenheit
+print "The result is: "
+print fahrenheit
 puts "."
