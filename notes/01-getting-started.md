@@ -31,6 +31,12 @@ If everything is correct, you are rewarded with the message:
 
     Syntax OK
 
+You can also use the `-e` command flag, which signals that you are providing an
+inline script to the interpreter.
+
+    $ ruby -e 'puts 1 + 2'
+    3
+
 ### Ruby Installation (anatomy)
 
 To find out where the Ruby executable files (including ruby and irb) have been
