@@ -16,9 +16,10 @@ Same convention as local variables, except that tehy can end with `?`, `!`, or
 
 #### Checking for syntax errors
 
-* Programming error: when the program run, but the output is not what's expected
-  (a.k.a it's the developer's fault).
+* Programming error: when the program run, but the output is not what's expected (a.k.a it's the developer's fault).
 * Syntax error: when you forgot how-to-ruby ;)
+
+Run your program with:
 
     ruby -cw <your_program.rb>
 
