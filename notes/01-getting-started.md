@@ -75,3 +75,10 @@ like this in the command line:
     $ rake admin:clean_tmp
 
 `rake` will executes the `clean_tmp` task defined inside the `admin` namespace.
+
+If you are in a directory containing a `Rakefile` you can also run:
+
+    $ rake --tasks
+
+You will see a listing of all defined tasks (and their description).
+
