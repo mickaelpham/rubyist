@@ -66,3 +66,12 @@ program:
 2.  Using `require` to get a feature loaded (e.g. `require "scanf"`).
 3.  Using `require_relative` to load features by searching relative to the
     current directory (not included in `$:` constant).
+
+### The rake task-management utility
+
+If you have a `Rakefile` located in the current directory, you can do something
+like this in the command line:
+
+    $ rake admin:clean_tmp
+
+`rake` will executes the `clean_tmp` task defined inside the `admin` namespace.
