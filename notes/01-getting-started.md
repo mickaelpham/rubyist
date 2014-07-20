@@ -57,3 +57,12 @@ Key Ruby directories and their `RbConfig` terms:
 | sitelibdir  | Your own Ruby language extensions (in Ruby)                |
 | sitearchdir | Your own Ruby language extensions (in C)                   |
 
+#### "Load"-ing a file
+
+Three ways to have Ruby loading a file (or a feature) outside of your main
+program:
+
+1.  Using `load` so that Ruby read/execute the file passed in parameter.
+2.  Using `require` to get a feature loaded (e.g. `require "scanf"`).
+3.  Using `require_relative` to load features by searching relative to the
+    current directory (which is not included in `$:` contant by default).
