@@ -65,4 +65,4 @@ program:
 1.  Using `load` so that Ruby read/execute the file passed in parameter.
 2.  Using `require` to get a feature loaded (e.g. `require "scanf"`).
 3.  Using `require_relative` to load features by searching relative to the
-    current directory (which is not included in `$:` contant by default).
+    current directory (not included in `$:` constant).
