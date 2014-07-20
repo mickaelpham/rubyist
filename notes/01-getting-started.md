@@ -16,7 +16,8 @@ Same convention as local variables, except that tehy can end with `?`, `!`, or
 
 #### Checking for syntax errors
 
-* Programming error: when the program run, but the output is not what's expected (a.k.a it's the developer's fault).
+* Programming error: when the program run, but the output is not what's expected
+  (a.k.a it's the developer's fault).
 * Syntax error: when you forgot how-to-ruby ;)
 
 Run your program with:
@@ -29,3 +30,24 @@ activates a higher level of warning.
 If everything is correct, you are rewarded with the message:
 
     Syntax OK
+
+### Ruby Installation (anatomy)
+
+To find out where the Ruby executable files (including ruby and irb) have been
+installed:
+
+    $ irb --simple-prompt -rrbconfig
+    >> RbConfig::CONFIG["bindir"]
+
+Key Ruby directories and their `RbConfig` terms:
+
+| Term        | Directory contents                                         |
+|-------------|------------------------------------------------------------|
+| rubylibdir  | Ruby standard library                                      |
+| bindir      | Ruby command-line tools                                    |
+| archdir     | Architecture-specific extensions and libraries (binaries)  |
+| sitedir     | Your own or third-party extensions and libraries (in Ruby) |
+| vendordir   | Third-party extensions and libraries (in Ruby)             |
+| sitelibdir  | Your own Ruby language extensions (in Ruby)                |
+| sitearchdir | Your own Ruby language extensions (in C)                   |
+
